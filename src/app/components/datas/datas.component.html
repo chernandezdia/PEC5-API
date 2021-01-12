@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Data List App</h1>
+    <ul class="list-group">
+        <a *ngFor="let data of datas" [routerLink]="['/data',data.id]"
+            class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadeIn">
+            {{data.name}}
+        </a>
+    </ul>
+</div>

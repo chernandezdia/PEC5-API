@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div *ngIf="data" class="row animate__animated animate__bounce animate__fadeIn">
+        <div class="col-md-9">
+            <p><strong>ID: </strong> {{data[0].id}}</p>
+            <p><strong>NAME: </strong> {{data[0].username}}</p>
+            <p><strong>USERNAME: </strong> {{data[0].email}}</p>
+            <p><strong>WEBSITE: </strong> <a href="#">{{data[0].website}}</a></p>
+        </div>
+        <div class="col-md-3">
+            <a class="btn btn-danger" routerLink="/">Back</a>
+        </div>
+    </div>
+</div>
