@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "university-api-pwa": {
+    "data-api-pwa": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/university-api-pwa",
+            "outputPath": "dist/data-api-pwa",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "university-api-pwa:build"
+            "browserTarget": "data-api-pwa:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "university-api-pwa:build:production"
+              "browserTarget": "data-api-pwa:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "university-api-pwa:build"
+            "browserTarget": "data-api-pwa:build"
           }
         },
         "test": {
@@ -116,18 +116,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "university-api-pwa:serve"
+            "devServerTarget": "data-api-pwa:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "university-api-pwa:serve:production"
+              "devServerTarget": "data-api-pwa:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/university-api-pwa/server",
+            "outputPath": "dist/data-api-pwa/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -148,21 +148,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "university-api-pwa:build",
-            "serverTarget": "university-api-pwa:server"
+            "browserTarget": "data-api-pwa:build",
+            "serverTarget": "data-api-pwa:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "university-api-pwa:build:production",
-              "serverTarget": "university-api-pwa:server:production"
+              "browserTarget": "data-api-pwa:build:production",
+              "serverTarget": "data-api-pwa:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "university-api-pwa:build:production",
-            "serverTarget": "university-api-pwa:server:production",
+            "browserTarget": "data-api-pwa:build:production",
+            "serverTarget": "data-api-pwa:server:production",
             "routes": [
               "/"
             ]
@@ -174,5 +174,5 @@
       }
     }
   },
-  "defaultProject": "university-api-pwa"
+  "defaultProject": "data-api-pwa"
 }

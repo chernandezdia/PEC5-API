@@ -1,5 +1,5 @@
 {
-  "name": "university-api-pwa",
+  "name": "data-api-pwa",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run university-api-pwa:serve-ssr",
-    "serve:ssr": "node dist/university-api-pwa/server/main.js",
-    "build:ssr": "ng build --prod && ng run university-api-pwa:server:production",
-    "prerender": "ng run university-api-pwa:prerender"
+    "dev:ssr": "ng run data-api-pwa:serve-ssr",
+    "serve:ssr": "node dist/data-api-pwa/server/main.js",
+    "build:ssr": "ng build --prod && ng run data-api-pwa:server:production",
+    "prerender": "ng run data-api-pwa:prerender"
   },
   "private": true,
   "dependencies": {
